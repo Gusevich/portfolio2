@@ -118,12 +118,12 @@
 section {
     padding: 100px 0;
 }
-.about, .services, .skills {
+.about, .services, .skills, .teams {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content{
+.skills .skills-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -324,6 +324,75 @@ section .title::after {
 }
 .skills-content .right .react::before {
     width: 30%;
+}
+
+/*teams section styling*/
+.teams {
+    /*height: 100vh;*/
+    background: url("../img/banner2.jpg") no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.teams .title::after {
+    content: 'who with me';
+}
+.teams .carousel .card {
+    background: #548EFF;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.teams .carousel .card:hover {
+    background: lightgray;
+}
+.teams .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.teams .carousel .card:hover .box {
+    transform: scale(1.05);
+}
+.teams .carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #B7C6E9;
+    transition: all 0.5s ease;
+}
+.teams .carousel .card:hover img {
+    border-color: black;
+}
+.owl-dots {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    outline: none!important;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.5s ease;
+    border: 5px solid lightseagreen!important;
+}
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+    background: #548EFF!important;
 }
 /*responsive media query start*/
 @media (max-width: 1300px) {
